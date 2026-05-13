@@ -38,11 +38,11 @@ shader_type canvas_item;
 
 Replace:
 ```gdshader
-ALBEDO = color;
-ALPHA = 1.0;
+ALBEDO = color.rgb;
+ALPHA = color.a;
 ```
 
 With:
 ```gdshader
-COLOR = vec4(color, 1.0);
+COLOR = color;
 ```
